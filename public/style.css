@@ -1,0 +1,148 @@
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #075e54;
+}
+
+.containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#btnen {
+  margin-top: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#btnen:hover {
+  background-color: #fff;
+  color: #25d366;
+}
+
+#rooms {
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.containerr label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#menu:hover #btnen {
+  animation: bounce 0.5s linear;
+}
+
+#chatroom {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #128C7E;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.menu .name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.chat {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.chat li {
+  margin-bottom: 10px;
+}
+
+.chat .meta {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.chat .message {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.typezone {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.typezone textarea {
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  margin-right: 10px;
+}
+
+.typezone #send {
+  background-color: #128C7E;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.typezone #send:hover {
+  background-color: #fff;
+  color: #128C7E;
+}
+
